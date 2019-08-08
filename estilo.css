@@ -3,14 +3,6 @@ html {
   font-size: 16px;
 }
 
-.header {
-  display: flex;
-  border-bottom: 1px solid #D6D6D6;
-  height: 64px;
-  margin: 0;
-  align-items: center;
-  margin-left: 64px;
-}
 
 .title {
   display: flex;
@@ -34,25 +26,37 @@ a {
   text-decoration: none;
 }
 
+
+.menu {
+  padding: 0;
+}
+
 .nav {
   display: flex;
   flex-direction: column;
   width: 64px;
   border-right: 1px solid #D6D6D6;
   align-items: center;
+  padding: 0;
+  
 }
 
 .iten {
   display: flex;
-
-}
-
-.menu {
-  display: flex;
-  font-size: 24px;
-  padding: 20px, 20px, 26px, 20px;
+  color: #E91E63;
 }
 
 .dashboard {
   font-size: 18px;
+}
+
+
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #D6D6D6;
+  height: 64px;
+  margin: 0;
+  align-items: center;
+  margin-left: 64px;
 }
