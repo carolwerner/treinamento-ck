@@ -23,6 +23,7 @@ a {
   padding: 0;
   background-color: rgba(233, 30, 99, 0.08);
   border-right: 1px solid #D6D6D6;
+  height: 100%;
 }
 
 .nav {
@@ -31,7 +32,6 @@ a {
   width: 263px;
   align-items: left;
   height: 100%;
-;
 }
 
 .menu-body{
@@ -57,7 +57,26 @@ a {
   letter-spacing: 0.15px;
   text-align: left;
   color:rgba(0, 0, 0, 0.6);
+  margin-left: 17px;
+}
 
+.arrow {
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: auto;
+}
+
+.text-config {
+  display: flex;
+  font-family:'Roboto';
+  font-weight: 500px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.09px;
+  flex-direction: column;
+  color:rgba(0, 0, 0, 0.6);
+  margin-left: 58px;
+  margin-top: 29px;
 }
 
 .dashboard.active{
