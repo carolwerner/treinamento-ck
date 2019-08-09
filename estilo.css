@@ -28,11 +28,16 @@ a {
 .nav {
   display: flex;
   flex-direction: column;
-  width: 64px;
-  align-items: center;
+  width: 263px;
+  align-items: left;
   height: 100%;
+;
 }
 
+.menu-body{
+  margin-left: 8px;
+  margin-right: 8px;
+}
 .item {
   display: flex;
   color: rgba(233, 30, 99, 0.87);
@@ -41,6 +46,18 @@ a {
 
 .dashboard{
   margin-top:8px;
+}
+
+.text-item{
+  display: flex;
+  font-family:'Roboto';
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color:rgba(0, 0, 0, 0.6);
+
 }
 
 .dashboard.active{
@@ -75,6 +92,7 @@ a {
   align-items: center;
   flex-grow: 0;
   flex-shrink: 0;
+  justify-content: left;
 }
 
 .menu-header {
