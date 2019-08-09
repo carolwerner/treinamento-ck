@@ -40,11 +40,8 @@ a {
   padding: 15px 15px 15px 15px;
 }
 
-.menu-header {
-  color: rgba(0, 0, 0, 0.5);
-  margin: 20px 20px 26px 20px;
-  font-size: 24px;
-  border-bottom: 1px solid #D6D6D6;
+.dashboard{
+  margin-top:8px;
 }
 
 .dashboard.active{
@@ -80,6 +77,44 @@ a {
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+.menu-header {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.men {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 20px 20px 26px 20px;
+  font-size: 24px;
+}
+
+.icon-user {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin: 26px 12px 0px 12px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.logo-ck{
+  display: flex;
+  background-color: #E91E63;
+  border-radius: 28px; 
+  height: 48px;
+  width: 48px;
+  box-shadow: 0px 1px 3px rgba(233, 30, 99, 1);
+  align-items: center;
+  justify-content: center;
+  margin: 18px 8px 8px 8px;
+}
+
+
 
 .title {
   display: flex;
