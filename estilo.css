@@ -88,11 +88,10 @@ a {
   display: flex;
   color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid #D6D6D6;
-  margin: auto 20px 12px 20px;
   padding-top: 12px;
   font-size: 24px;
   width: 100%;
-  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -123,8 +122,13 @@ a {
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.5);
-  margin: 20px 20px 26px 20px;
+  margin: 20px;
   font-size: 24px;
+}
+
+.icon-ck{
+  margin-left: 8px;
+
 }
 
 .icon-user {
@@ -132,6 +136,28 @@ a {
   width: 40px;
   height: 40px;
   margin: 26px 12px 0px 12px;
+}
+
+.user-name {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.09px;
+  line-height: 19px;
+  color:rgba(0, 0, 0, 0.87);  
+  margin-left: 64px;
+}
+
+.office-name{
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  color:rgba(0, 0, 0, 0.6); 
+  margin-left: 64px;
 }
 
 h1 {
@@ -143,11 +169,22 @@ h1 {
   background-color: #E91E63;
   border-radius: 28px; 
   height: 48px;
-  width: 48px;
+  width: 216px;
   box-shadow: 0px 1px 3px rgba(233, 30, 99, 1);
   align-items: center;
   justify-content: center;
   margin: 18px 8px 8px 8px;
+}
+
+.aplicar {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 1.25px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-left: 8px;
 }
 
 .title {
