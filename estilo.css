@@ -24,19 +24,28 @@ a {
   background-color: rgba(233, 30, 99, 0.08);
   border-right: 1px solid #D6D6D6;
   height: 100%;
+  width: 263px;
 }
+
 
 .nav {
   display: flex;
   flex-direction: column;
-  width: 263px;
-  align-items: left;
-  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  max-height: 100%;
 }
 
 .menu-body{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 1;
   margin-left: 8px;
   margin-right: 8px;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .item {
   display: flex;
@@ -60,6 +69,12 @@ a {
   margin-left: 17px;
 }
 
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
 .arrow {
   color: rgba(0, 0, 0, 0.6);
   margin-left: auto;
@@ -68,7 +83,7 @@ a {
 .text-config {
   display: flex;
   font-family:'Roboto';
-  font-weight: 500px;
+  font-weight: 500;
   text-align: left;
   font-size: 14px;
   line-height: 19px;
@@ -82,6 +97,7 @@ a {
 .dashboard.active{
   background-color: rgba(233, 30, 99, 0.16);
   border-radius: 4px;
+  margin-right: 8px;
 }
 
 .rodape {
@@ -92,6 +108,8 @@ a {
   font-size: 24px;
   width: 100%;
   align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
 .content {
@@ -122,8 +140,8 @@ a {
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.5);
-  margin: 20px;
   font-size: 24px;
+  margin-top: 20px;
 }
 
 .icon-ck{
@@ -203,4 +221,16 @@ h1 {
   display: flex;
   color: #000000;
   margin-left: 36px;
+}
+
+.menu-small{
+  width: 64px;
+}
+
+.menu-small .text-item{
+  display: none;
+}
+
+.menu-small .logo-ck {
+  width: 48px;
 }
