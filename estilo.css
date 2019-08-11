@@ -249,6 +249,30 @@ h1 {
   width: 64px;
 }
 
+.menu-small .icon-ck {
+  display: none;
+}
+
+.menu-small .user-info{
+  display: none;
+}
+
+.menu-small .aplicar{
+  display: none;
+}
+
+.menu-small .sub-menu{
+  display: none;
+}
+
+.menu-small .arrow {
+  display: none;
+}
+
+.menu-small .item-rodape:not(.help) {
+  display: none;
+}
+
 .menu-small .text-item{
   display: none;
 }
