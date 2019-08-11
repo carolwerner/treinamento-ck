@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   font-size: 16px;
@@ -33,7 +37,7 @@ a {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-  max-height: 100%;
+  height: 100%;
 }
 
 .menu-body{
@@ -51,6 +55,8 @@ a {
   display: flex;
   color: rgba(233, 30, 99, 0.87);
   padding: 15px 15px 15px 15px;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .dashboard{
@@ -73,6 +79,7 @@ a {
   display: flex;
   flex-direction: column;
   max-height: 100%;
+  flex: 0 1 auto;
 }
 
 .arrow {
@@ -90,8 +97,7 @@ a {
   letter-spacing: 0.09px;
   flex-direction: column;
   color:rgba(0, 0, 0, 0.6);
-  margin-left: 58px;
-  margin-top: 29px;
+  padding: 14px 14px 15px 52px;
 }
 
 .dashboard.active{
@@ -102,14 +108,18 @@ a {
 
 .rodape {
   display: flex;
-  color: rgba(0, 0, 0, 0.5);
   border-top: 1px solid #D6D6D6;
-  padding-top: 12px;
   font-size: 24px;
   width: 100%;
   align-items: center;
   justify-content: center;
   margin-top: auto;
+  flex: 0 0 auto;
+  height: 48px;
+}
+
+.rodape a {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .content {
