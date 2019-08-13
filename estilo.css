@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+th {
+  font-weight: 500;
+}
+
 .menu {
   padding: 0;
   background-color: rgba(233, 30, 99, 0.08);
@@ -146,6 +150,7 @@ a {
 
 .menu-header {
   border-bottom: 1px solid #D6D6D6;
+  width: 100%;
 }
 
 .men {
@@ -245,6 +250,58 @@ h1 {
   margin-left: 36px;
 }
 
+
+table, td, th {
+  border-collapse: collapse;
+}
+
+
+table{
+  /* border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0; */
+}
+
+th{
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.09px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.6); 
+  /* border-bottom: 1px solid #D6D6D6; */
+}
+
+td {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6); 
+  /* border-bottom: 1px solid #D6D6D6; */
+}
+
+.conteudo-thead {
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.conteudo-tbody{
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  align-items: center;
+  height: 48px;
+ 
+}
+
 .menu-small{
   width: 64px;
 }
@@ -292,3 +349,4 @@ h1 {
   text-align: center;
   padding-left: 0;
 }
+
