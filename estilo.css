@@ -255,6 +255,7 @@ h1 {
 .main-content {
   overflow: hidden;
   overflow-y: auto;
+  padding: 33px 32px 23px 32px;
 }
 
 table, td, th {
@@ -262,12 +263,13 @@ table, td, th {
 }
 
 
-table{
+table {
   /* border: 1px solid #D6D6D6;
   box-sizing: border-box;
   border-radius: 4px 4px 0 0; */
+  /* width: 95%;
+  margin: 32px 32px 23px 32px; */
   width: 100%;
-  margin: 32px 32px 23px 32px;
   border-radius: 4px 4px 0 0;
   overflow: hidden;
 }
@@ -279,6 +281,7 @@ th{
   letter-spacing: 0.09px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6); 
+  padding-left: 16px
   /* border-bottom: 1px solid #D6D6D6; testei com a propriedade border-bottom e não achei que ficou legal*/
 }
 
@@ -290,21 +293,22 @@ td {
   line-height: 19px;
   color: rgba(0, 0, 0, 0.6); 
   /* border-bottom: 1px solid #D6D6D6; */
+  padding-left: 16px;
 }
 
 .conteudo-thead {
   border: 1px solid #D6D6D6;
   box-sizing: border-box;
-  border-radius: 4px 4px 0 0;
   height: 48px;
   background-color: rgba(0, 0, 0, 0.06);
+  text-align: left;
 }
 
 .conteudo-tbody{
   border: 1px solid #D6D6D6;
   box-sizing: border-box;
-  border-radius: 4px 4px 0 0;
   height: 48px;
+  text-align: left;
 }
 
 .conteudo-tfoot {
@@ -315,10 +319,36 @@ td {
   line-height: 16px;
   border: 1px solid #D6D6D6;
   box-sizing: border-box;
-  border-radius: 4px 4px 0 0;
-  height: 40px;
   color: rgba(0, 0, 0, 0.6); 
+  height: 40px;
 }
+
+.div-tfoot{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 8px;
+  
+}
+
+.first-tfoot {
+  font-size: 24px;
+}
+
+.first-tfoot + .first-tfoot {
+  margin-left: 24px;
+}
+
+
+.tfoot-left {
+  margin-left: auto;
+}
+
+.third-tfoot {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 
 .menu-small{
   width: 64px;
