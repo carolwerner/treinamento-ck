@@ -252,6 +252,11 @@ h1 {
 }
 
 
+.main-content {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 table, td, th {
   border-collapse: collapse;
 }
@@ -261,8 +266,10 @@ table{
   /* border: 1px solid #D6D6D6;
   box-sizing: border-box;
   border-radius: 4px 4px 0 0; */
+  width: 100%;
   margin: 32px 32px 23px 32px;
-  
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
 }
 
 th{
@@ -272,7 +279,7 @@ th{
   letter-spacing: 0.09px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6); 
-  /* border-bottom: 1px solid #D6D6D6; */
+  /* border-bottom: 1px solid #D6D6D6; testei com a propriedade border-bottom e não achei que ficou legal*/
 }
 
 td {
