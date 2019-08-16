@@ -258,7 +258,7 @@ h1 {
   padding: 33px 32px 23px 32px;
 }
 
-table, td, th {
+table {
   border-collapse: collapse;
 }
 
@@ -270,18 +270,20 @@ table {
   /* width: 95%;
   margin: 32px 32px 23px 32px; */
   width: 100%;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
-th{
+th {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.09px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.6); 
-  padding-left: 16px
+  padding-left: 16px;
+  /* border-spacing: 0;
+  table-layout: fixed; */
   /* border-bottom: 1px solid #D6D6D6; testei com a propriedade border-bottom e não achei que ficou legal*/
 }
 
@@ -293,9 +295,22 @@ td {
   line-height: 19px;
   color: rgba(0, 0, 0, 0.6); 
   /* border-bottom: 1px solid #D6D6D6; */
-  padding-left: 16px;
+  padding-left: 16px; 
+  /* border-spacing: 0; */
+  position: relative;
+  height: 48px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
+tr td:nth-child(2) {
+  width: 50%;
+}
+
+tr td:first-child, tr th:first-child {
+  width: 56px;
+  text-align: center;
+}
 
 .conteudo-thead {
   border: 1px solid #D6D6D6;
@@ -308,12 +323,77 @@ td {
 .conteudo-tbody{
   border: 1px solid #D6D6D6;
   box-sizing: border-box;
-  height: 48px;
   text-align: left;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  background-color: #FFFFFF;
+  border: 2px solid #D6D6D6;
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.checkmark {
+  position: absolute;
+  display: none;
+  top: -2px;
+  left: -2px;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+  background-color: #4CAF50;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.checkbox-input:checked + .checkmark {
+  display: block;
+}
+.checkbox-input {
+  z-index: 1;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  left: -2px;
+  bottom: -2px;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
 }
 
 .conteudo-tbody:hover{
   background-color: rgba(0, 0, 0, 0.12);
+}
+
+.edit-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0; 
+}
+
+.edit-item-link {
+  color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+
+.edit-item {
+  display: none;
+}
+
+.conteudo-tbody:hover .edit-item {
+  display: flex;
 }
 
 .conteudo-tfoot {
@@ -333,28 +413,24 @@ td {
   flex-direction: row;
   align-items: center;
   padding-right: 8px;
-  
-}
-
-.first-tfoot {
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .first-tfoot + .first-tfoot {
   margin-left: 24px;
 }
 
-
 .tfoot-left {
   margin-left: auto;
 }
 
-.third-tfoot {
+.fourth-tfoot {
   margin-left: 16px;
   margin-right: 16px;
 }
 
+.icon-tfoot {
+  color: rgba(0, 0, 0, 0.6);
+}
 
 .menu-small{
   width: 64px;
