@@ -287,7 +287,9 @@ table {
   border-radius: 4px;
   overflow: hidden;
   margin-top: 32px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
 }
 
 th {
