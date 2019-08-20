@@ -502,7 +502,50 @@ tr td:first-child, tr th:first-child {
 }
 
 .icon-tfoot {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  border: 1px solid #D6D6D6;
+  border-radius: 4px;
+  width: 507px;
+  height: 151px;
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.title-card {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 35px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.number-card, .description-card {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 19px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.edit-text-card {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  line-height: 21px;
+  text-align: center;
+  color: #E91E63; 
+}
+
+.edit-icon-card {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-small{
