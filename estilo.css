@@ -24,6 +24,7 @@ a {
   text-decoration: none;
 }
 
+
 th {
   font-weight: 500;
 }
@@ -34,6 +35,7 @@ th {
   border-right: 1px solid #D6D6D6;
   height: 100%;
   width: 263px;
+  flex-shrink: 0;
 }
 
 
@@ -102,6 +104,11 @@ th {
 }
 
 .text-config.active{
+  background-color: rgba(233, 30, 99, 0.16);
+  border-radius: 4px;
+}
+
+.item.active{
   background-color: rgba(233, 30, 99, 0.16);
   border-radius: 4px;
 }
